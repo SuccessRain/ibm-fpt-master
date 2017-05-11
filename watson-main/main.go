@@ -167,15 +167,6 @@ func main() {
 		Password: password,
 	}
 
-	/*
-	var creden watson.Credentials = watson.Credentials{
-		Username: "9a4a2bb2-12a0-469c-96bb-0a8387e0ae21",
-		Password: "FdvIAuso3rNG",
-		//Username: "647bf7bb-eb41-4884-b608-f6a4acd0f43f",
-		//Password: "Zbj8CrIzQOvg",
-	}
-	*/
-
 	//"6fc4a9a2-aa9c-4e97-96a8-0b37a9528497" - CongVV
 	//"a930e0a7-8624-4123-b682-fa97bb36ac1d" - Test
 	//"2f8b859e-9df3-46af-a951-d2ad9d4125bb" - Test 2
@@ -187,7 +178,21 @@ func main() {
 	}
 
 	TestIntent(c, workspaces)
-	//test(c, "2f8b859e-9df3-46af-a951-d2ad9d4125bb")
+
+	/*
+	var creden watson.Credentials = watson.Credentials{
+		Username: "9a4a2bb2-12a0-469c-96bb-0a8387e0ae21",
+		Password: "FdvIAuso3rNG",
+		//Username: "647bf7bb-eb41-4884-b608-f6a4acd0f43f",
+		//Password: "Zbj8CrIzQOvg",
+	}
+	c, err := conversation.NewClient(watson.Config{Credentials: creden, })
+	if err != nil {
+		fmt.Print("NewClient() failed:\t"); fmt.Println(err)
+		return
+	}
+	test(c, "2f8b859e-9df3-46af-a951-d2ad9d4125bb")
+	*/
 }
 
 const helpMessage string = `
